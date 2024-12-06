@@ -1,5 +1,5 @@
 import { Item } from "../Item/Item";
-import "./List.css";
+import "./List.module.css";
 
 const emojis = ["🚀", "🎶", "🎁", "🎉", "✨"];
 
@@ -7,7 +7,7 @@ export function List() {
   return (
     <>
       <button
-        className="list_btn"
+        className="btn"
         onClick={() => alert(`Number of emoji: ${emojis.length}`)}
       >
         Number of emoji
