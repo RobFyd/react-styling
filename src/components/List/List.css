@@ -7,9 +7,9 @@
     padding: 30px;
 }
 
-.btn {
+.list_btn {
     background: transparent;
-    border: 1px solid #000;
+    border: 1px solid salmon;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -19,7 +19,7 @@
     margin: 30px;
 }
 
-.btn:hover {
+.list_btn:hover {
     background: salmon;
     color: #fff;
 }
