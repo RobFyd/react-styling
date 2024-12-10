@@ -19,7 +19,6 @@ const StyledButton = styled.button`
     color: white;
   }
 `;
-
 const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
