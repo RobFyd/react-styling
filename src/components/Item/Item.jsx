@@ -1,5 +1,4 @@
 import { useState } from "react";
-import styles from "./Item.module.css";
 import styled from "styled-components";
 
 const StyledItem = styled.li`
@@ -15,7 +14,7 @@ const StyledEmoji = styled.span`
   margin-bottom: 42px;
   font-size: 32px;
   transition: transform 0.8s;
-  transform: ${({ zoomed }) => (zoomed ? "scale(2)" : "scale(1)")};
+  transform: ${({ $zoomed }) => ($zoomed ? "scale(3)" : "scale(1)")};
 `;
 
 const StyledButton = styled.button`
@@ -39,7 +38,7 @@ export function Item({ emoji }) {
 
   return (
     <StyledItem>
-      <StyledEmoji zoomed={zoomed}>{emoji}</StyledEmoji>
+      <StyledEmoji $zoomed={zoomed}>{emoji}</StyledEmoji>
       <StyledButton
         onClick={() => {
           setZoomed((wasZoomed) => !wasZoomed);
