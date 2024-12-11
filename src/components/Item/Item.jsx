@@ -14,8 +14,10 @@ const StyledEmoji = styled.span`
   margin-bottom: 42px;
   font-size: 32px;
   transition: transform 0.8s;
-  transform: ${({ $zoomed }) => ($zoomed ? "scale(3)" : "scale(1)")};
+  ${({ $zoomed }) => $zoomed && "transform: scale(3)"};
 `;
+
+//  transform: ${({ $zoomed }) => ($zoomed ? "scale(3)" : "scale(1)")}; // Alternative
 
 const StyledButton = styled.button`
   background: transparent;
