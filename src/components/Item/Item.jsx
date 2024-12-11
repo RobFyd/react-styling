@@ -8,7 +8,6 @@ const StyledItem = styled.li`
   text-align: center;
   overflow: hidden;
 `;
-
 const StyledEmoji = styled.span`
   display: block;
   margin-bottom: 42px;
@@ -16,7 +15,6 @@ const StyledEmoji = styled.span`
   transition: transform 0.8s;
   ${({ $zoomed }) => $zoomed && "transform: scale(3)"};
 `;
-
 //  transform: ${({ $zoomed }) => ($zoomed ? "scale(3)" : "scale(1)")}; // Alternative
 
 const StyledButton = styled.button`
