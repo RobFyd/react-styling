@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { StyledButton } from "../styles/StyledButton";
 
 const StyledItem = styled.li`
-  background: salmon;
+  background: orange;
   padding: 30px 50px;
   border-radius: 20px;
   text-align: center;
