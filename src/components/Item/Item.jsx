@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import { StyledButton } from "../styles/StyledButton";
 
 const StyledItem = styled.li`
   background: salmon;
@@ -15,23 +16,7 @@ const StyledEmoji = styled.span`
   transition: transform 0.8s;
   ${({ $zoomed }) => $zoomed && "transform: scale(3)"};
 `;
-//  transform: ${({ $zoomed }) => ($zoomed ? "scale(3)" : "scale(1)")}; // Alternative
-
-const StyledButton = styled.button`
-  background: transparent;
-  border: solid 1px;
-  padding: 12px;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100px;
-  color: white;
-  transition: background 0.3s, color 0.3s;
-
-  &:hover {
-    color: salmon;
-    background: white;
-  }
-`;
+//  transform: ${({ $zoomed }) => ($zoomed ? "scale(3)" : "scale(1)")}; // Alternative way to write the above line
 
 export function Item({ emoji }) {
   const [zoomed, setZoomed] = useState(false);
