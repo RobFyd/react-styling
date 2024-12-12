@@ -9,7 +9,7 @@ export const StyledButton = styled.button`
   width: 100px;
   color: salmon;
   transition: background 0.3s;
-  margin: 30px;
+  margin: ${({ $margin }) => $margin + "px"};
 
   &:hover {
     background: salmon;
